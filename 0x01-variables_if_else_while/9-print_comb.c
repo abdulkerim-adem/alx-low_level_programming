@@ -6,7 +6,8 @@
  */
 int main(void)
 {
-	for(int c=48;c<58;c++)
+	int c;
+	for(c=48;c<58;c++)
 	{
 		putchar(c);
 		putchar(',');
