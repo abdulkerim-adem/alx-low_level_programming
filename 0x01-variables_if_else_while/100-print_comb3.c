@@ -1,23 +1,29 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - prints possible unique cominations of two digits
- * only in ascending order
- * Return: 0 always success
+ * main - prints all possible different combinations of two digits
+ * Return: ALways 0 (Success)
  */
 int main(void)
 {
-	int i,j;
-	for(i=48;i<57;i++)
+	int n, m;
+
+	for (n = 48; n <= 56; n++)
 	{
-		for(j=i+1;j<58;j++)
+		for (m = 49; m <= 57; m++)
 		{
-			putchar(i);
-			putchar(j);
-			putchar(',');
-			putchar(' ');
+			if (m > n)
+			{
+				putchar(n);
+				putchar(m);
+				if (n != 56 || m != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
