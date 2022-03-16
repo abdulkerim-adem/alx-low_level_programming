@@ -3,7 +3,6 @@
 /**
  * print_alphabet_x10()-prints alphabet in lower casee
  * 10 times
- * return: 0-always success
  */
 void print_alphabet_x10(void)
 {
@@ -21,5 +20,4 @@ void print_alphabet_x10(void)
 		i++;
 		_putchar ('\n');
 	}
-	return (0);
 }
